@@ -1,30 +1,18 @@
-U+1F30C int printf(char U+00A9 *format, ...);int main(){
+U+1F30C int printf(char U+00A9 *format, ...);
+int main(){
 
-	printf("%s\n","FizzBuzz Example:\n" );
+    printf("%s\n","Factorial Example:\n" );
 
-    int i;
-	int tres;
-	int cinco;
+    int i; 
+    int fact = 1;
+    i = 5;
+    int n = i;
 
-    U+1F502(i=1; i<=100; i++)
-    {
-		tres = (i - (i / 3 * 3));
-   	    cinco = (i - (i / 5 * 5));
-
-
-        U+1F914((tres == 0) & (cinco == 0)){
-            printf("number = %d FizzBuzz\n", i);
-		  }
-        U+1F9D0 U+1F914(tres == 0){
-            printf("number = %d Fizz\n", i);
-		  }
-        U+1F9D0 U+1F914(cinco == 0){
-            printf("number = %d Buzz\n", i);
-		  }
-        U+1F9D0{
-            printf("number = %d\n",i);
-		  }
-	 }
-
-    U+1F4E4 0;
+/*while loop will calculate factorial*/
+    U+1F501(i>=1){
+        fact=fact*i;
+        i--;
+    }
+        printf("The factorial of given number %d is %d\n",n,fact);
+        U+1F4E4 0;
 }

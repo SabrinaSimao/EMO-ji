@@ -1,0 +1,18 @@
+
+🔢 main(){
+
+    🖨("%s\n","Factorial Example:\n" );
+
+    🔢 i; 
+    🔢 fact = 1;
+    i = 5;
+    🔢 n = i;
+
+/*while loop will calculate factorial*/
+    🔁(i>=1){
+        fact=fact*i;
+        i--;
+    }
+        🖨("The factorial of given number %d is %d\n",n,fact);
+        📤 0;
+}

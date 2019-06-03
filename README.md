@@ -99,6 +99,7 @@ https://github.com/sandeep007734/Toy-C-Compiler-using-Flex-Bison-LLVM
 
 https://pypi.org/project/emoji/
 
+https://llvm.org/docs/CommandGuide/lli.html
 
 
 

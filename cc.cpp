@@ -34,7 +34,6 @@ int main(int argc, char **argv) {
     CodeGenContext context; // populated during parsing
     context.generateCode(*programBlock);
 
-
     return 0;
 }
 

@@ -39,15 +39,15 @@ static int check_type(void);
 
 %%
 
-"U+1F501"                 { return TOKEN(WHILE); }
-"U+1F9D0"                  { return TOKEN(ELSE); }
-"U+1F914"                    { return TOKEN(IF); }
-"U+1F502"                   { return TOKEN(FOR); }
-"U+1F494"                 { return TOKEN(BREAK); }
-"U+1F4BC"                  { return TOKEN(CASE); }
+"U+1F501"                { return TOKEN(WHILE); }
+"U+1F9D0"                { return TOKEN(ELSE); }
+"U+1F914"                { return TOKEN(IF); }
+"U+1F502"                { return TOKEN(FOR); }
+"U+1F494"                { return TOKEN(BREAK); }
+"U+1F4BC"                { return TOKEN(CASE); }
 "U+00A9"                 { return TOKEN(CONST); }
-"U+27A1"              { return TOKEN(CONTINUE); }
-"U+1F449"                    { return TOKEN(DO); }
+"U+27A1"                 { return TOKEN(CONTINUE); }
+"U+1F449"                { return TOKEN(DO); }
 "U+1F30C"                { return TOKEN(EXTERN); }
 "U+1F4E4"                { return TOKEN(RETURN); }
 "U+1F331"                { return TOKEN(STATIC); }

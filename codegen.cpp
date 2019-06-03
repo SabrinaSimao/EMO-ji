@@ -54,7 +54,6 @@ static Value *findIdentifierValue(CodeGenContext &context, string name) {
                 return parentBlock->parent->locals[name];
             }
             parentBlock = parentBlock->parent;
-
         }
     }
     checkglobal:
@@ -340,10 +339,7 @@ Value *AssignmentNode::codeGen(CodeGenContext &context) {
                 return gvar;
             } else {
                 cout << "It has been initialized" << endl;
-//                cout << id_val->getValueType() << endl;
-//                return new StoreInst(assignmentExpr->codeGen(context),
-//                                     id_val, false,
-//                                     context.currentBlock());
+
             }
         } else {
             std::cerr << "undeclared variable " << id.name << endl;
@@ -364,7 +360,7 @@ Value *AssignmentNode::codeGen(CodeGenContext &context) {
 
 }
 
-//----------------
+//---------------
 
 Value *LongNode::codeGen(CodeGenContext &context) {
     cout << "Creating code for: Long" << endl;
@@ -409,8 +405,6 @@ Value *StringNode::codeGen(CodeGenContext &context) {
     pos = value.find("\"");
     value.erase(pos, 1);
 
-
-//    cout << "String code gen: " << value << endl;
     const char *constValue = value.c_str();
 
     llvm::Constant *format_const =
@@ -620,8 +614,6 @@ Value *FunctionDefinitionNode::codeGen(CodeGenContext &context) {
     block.codeGen(context);
     ReturnInst::Create(llvmContext, context.getCurrentReturnValue(), context.currentBlock());
     context.popBlock();
-
-//    verifyFunction(*function);
 
     return function;
 }

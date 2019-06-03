@@ -184,14 +184,6 @@ public:
         cout << "rhs: " << &rhs << endl;
         cout << "-----------" << endl;
     }
-//    BinaryOperatorNode(IdentiferNode &lhs, char op, ExprNode &rhs) :
-//            lhs(lhs), rhs(rhs), op(op) {
-//        cout << "++++++++++" << endl;
-//        cout << "BO: 1: " << op << endl;
-//        cout << "lhs: " << &lhs << endl;
-//        cout << "rhs: " << &rhs << endl;
-//        cout << "-----------" << endl;
-//    }
 
     virtual Value *codeGen(CodeGenContext &context);
 };
@@ -261,14 +253,6 @@ public:
 
     void setOp(int op) {
         AssignmentNode::op = op;
-//        switch (op) {
-//            case ADD_ASSIGN:
-//                assignmentExpr = new BinaryOperatorNode(id, '+', id);
-//                break;
-//            case '=':
-//            default:
-//                cout << "Nothing to be done\n";
-//        }
     }
 
     IdentiferNode &getId() {

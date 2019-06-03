@@ -48,7 +48,7 @@ Rodar scrip python com seu codigo:
 OPICIONAL:
 
 Na pasta Emoji_Examples tem alguns exemplos disponíveis para teste. Neste caso, faça
-> python3 Emoji.py Emoji_Examples/<arquivo>.txt
+> python3 Emoji.py Emoji_Examples/<arquivo.txt>
 
 ### Passo 2:
 

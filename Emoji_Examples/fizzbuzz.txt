@@ -1,0 +1,30 @@
+🔢 main(){
+
+	🖨("%s\n","FizzBuzz Example:\n" );
+
+    🔢 i;
+	🔢 tres;
+	🔢 cinco;
+
+    🔂(i=1; i<=100; i++)
+    {
+		tres = (i - (i / 3 * 3));
+   	    cinco = (i - (i / 5 * 5));
+
+
+        🤔((tres == 0) & (cinco == 0)){
+            🖨("number = %d FizzBuzz\n", i);
+		  }
+        🧐 🤔(tres == 0){
+            🖨("number = %d Fizz\n", i);
+		  }
+        🧐 🤔(cinco == 0){
+            🖨("number = %d Buzz\n", i);
+		  }
+        🧐{
+            🖨("number = %d\n",i);
+		  }
+	 }
+
+    📤 0;
+}

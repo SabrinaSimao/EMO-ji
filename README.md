@@ -1,3 +1,11 @@
+## Apresentação
+
+[Em PDF](https://github.com/SabrinaSimao/EMO-ji/pdf/EMOJI.pdf)
+
+ou pela versão online do PowerPoint
+
+https://bit.ly/2HRo9Gi
+
 ## Dependências:
 Flex
 

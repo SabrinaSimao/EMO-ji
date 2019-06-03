@@ -1,0 +1,31 @@
+U+1F30C int printf(char U+00A9 *format, ...);
+int main(){
+
+	printf("%s\n","FizzBuzz Example:\n" );
+
+    int i;
+	int tres;
+	int cinco;
+
+    U+1F502(i=1; i<=100; i++)
+    {
+		tres = (i - (i / 3 * 3));
+   	    cinco = (i - (i / 5 * 5));
+
+
+        U+1F914((tres == 0) & (cinco == 0)){
+            printf("number = %d FizzBuzz\n", i);
+		  }
+        U+1F9D0 U+1F914(tres == 0){
+            printf("number = %d Fizz\n", i);
+		  }
+        U+1F9D0 U+1F914(cinco == 0){
+            printf("number = %d Buzz\n", i);
+		  }
+        U+1F9D0{
+            printf("number = %d\n",i);
+		  }
+	 }
+
+    U+1F4E4 0;
+}

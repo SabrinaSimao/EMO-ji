@@ -1,4 +1,3 @@
-
 🔢 main(){
 
 	🖨("%s\n","FizzBuzz Example:\n" );

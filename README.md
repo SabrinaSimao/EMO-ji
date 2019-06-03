@@ -45,21 +45,41 @@ Rodar scrip python com seu codigo:
 
 (gera arquivo out.ji)
 
+OPICIONAL:
+
+Na pasta Emoji_Examples tem alguns exemplos disponíveis para teste. Neste caso, faça
+> python3 Emoji.py Emoji_Examples/<file>.txt
+
 ### Passo 2:
 
-Compilar seu codigo com a AST usando llvm
+Compilar seu codigo com a AST usando lli
 
-make test file=<arquivo_desejado>
+make exe file=<arquivo_desejado>
 
 Exemplo:
-> make test file=out.ji
+> make exe file=out.ji
+
+Caso não deseje que a lli execute o programa, somente queira ver o código em IR, rode
+>make file=<desired_file>
+
+### Cleaning up
+
+>make clean
+
+### Outros códigos
+
+Não é necessário recompilar a ast entre os testes. Uma vez compilada, rode quantas vezes quiser
+>make exe file=out.ji
+
+Se quiser, pode mudar o arquivo de out.ji para outro, ou refazer o conteudo do mesmo usando o script python do Passo 1
 
 ## Exemplos disponíveis:
 
 - Fibonacci
 - Fizz Buzz
 - Loop While
-- Checkup de Funcionalidades [tbr]
+- Fatorial
+- Funções Basicas (+-/*)
 
 ## Funcionalidades
 - Funções

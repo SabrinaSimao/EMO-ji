@@ -24,11 +24,11 @@ parser.tab.cpp: parser.y
 cc: $(OBJS)
 	@ g++ -ggdb -g -O0 -o $@ $(OBJS) $(LIBS) $(LDFLAGS)
 
-test: cc $(file)
+exe: cc $(file)
 	@  make > /dev/null 2> /dev/null; ./cc $(file) > /dev/null 2> $(file).ll; llvm-as-3.9 $(file).ll;lli-3.9 $(file).bc 
 
-check: cc test1.ji
-	./cc test1.ji ;echo "To run the code with lli run \"make test file=out.ji\""
+check: cc $(file)
+	./cc $(file) ;echo "To run the code with lli run \"make exe file=out.ji\""
 
 clean:
 	$(RM) -rf parser.tab.cpp parser.tab.hpp cc parser.lex.cpp $(OBJS); $(RM) *.ll *.bc 

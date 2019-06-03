@@ -2,6 +2,8 @@
 
 [Em PDF](https://github.com/SabrinaSimao/EMO-ji/blob/master/pdf/EMOJI.pdf)
 
+(formatação de emojis fica um pouco estranha em pdf de web browser)
+
 ou pela versão online do PowerPoint
 
 https://bit.ly/2HRo9Gi

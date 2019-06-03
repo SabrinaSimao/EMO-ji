@@ -1,6 +1,6 @@
 ## Apresentação
 
-[Em PDF](https://github.com/SabrinaSimao/EMO-ji/pdf/EMOJI.pdf)
+[Em PDF](https://github.com/SabrinaSimao/EMO-ji/blob/master/pdf/EMOJI.pdf)
 
 ou pela versão online do PowerPoint
 

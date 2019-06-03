@@ -59,7 +59,19 @@ Exemplo:
 - Fibonacci
 - Fizz Buzz
 - Loop While
-- Checkup de Funcionalidades
+- Checkup de Funcionalidades [tbr]
+
+## Funcionalidades
+- Funções
+- Vars: int, long, char, double, void
+- Operadores aritméticos (+)
+- Operadores Unários (++)
+- Comparadores (==)
+- If/else
+- While
+- For
+- Globals
+- Declaração de Funções
 
 ## Referências:
 

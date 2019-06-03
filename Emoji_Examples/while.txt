@@ -1,3 +1,4 @@
+
 🔢 main(){
 
 	🖨("%s\n","While Example:\n" );

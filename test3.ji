@@ -1,18 +1,16 @@
-U+1F30C int printf(char const *format, ...);
-
+U+1F30C int printf(char U+00A9 *format, ...);
 int main(){
 
-printf("%s\n","While Example:\n" );
+	printf("%s\n","While Example:\n" );
 
-   int n = 5;
-   int i = 0;
+    int n = 5;
+    int i = 0;
 	
-U-1F501(i<10){
-	printf("%d ",n );
-	n++;
-	i++;
+    U+1F501(i<10){
+        printf("%d ",n );
+        n++;
+        i++;
+    }
+    U+1F4E4 0;
 }
-	U+1F4E4 0;
-}
-
 

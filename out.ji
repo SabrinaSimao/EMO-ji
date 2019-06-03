@@ -1,0 +1,27 @@
+U+1F30C int printf(char U+00A9 *format, ...);int main(){
+
+
+	printf("%s\n","Fibonacci:\n" );
+
+	int n = 6;
+
+	int first = 0;
+	int second = 1;
+	int next = 0;
+	int c = 0;
+	
+	U+1F502 (c = 0; c < n; c++){
+		U+1F914 (c <= 1){
+		    next = c;
+		}
+		U+1F9D0{
+		    next = first + second;
+		    first = second;
+		    second = next;
+		}
+		printf("%d\n", next);
+	}
+	
+	U+1F4E4 0;
+}
+

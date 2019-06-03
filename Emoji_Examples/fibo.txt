@@ -1,0 +1,27 @@
+🔢 main(){
+
+
+	🖨("%s\n","Fibonacci:\n" );
+
+	🔢 n = 6;
+
+	🔢 first = 0;
+	🔢 second = 1;
+	🔢 next = 0;
+	🔢 c = 0;
+	
+	🔂 (c = 0; c < n; c++){
+		🤔 (c <= 1){
+		    next = c;
+		}
+		🧐{
+		    next = first + second;
+		    first = second;
+		    second = next;
+		}
+		🖨("%d\n", next);
+	}
+	
+	📤 0;
+}
+

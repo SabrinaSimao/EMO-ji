@@ -52,7 +52,7 @@ Compilar seu codigo com a AST usando llvm
 make test file=<arquivo_desejado>
 
 Exemplo:
-> make test file=out
+> make test file=out.ji
 
 ## Exemplos disponíveis:
 

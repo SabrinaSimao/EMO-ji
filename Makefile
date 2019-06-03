@@ -24,8 +24,8 @@ parser.lex.cpp: tokenizer.l parser.tab.hpp
 cc: $(OBJS)
 	g++ -ggdb -g -O0 -o $@ $(OBJS) $(LIBS) $(LDFLAGS)
 
-test: cc $(file).ji
-	@ rm $(file).ll; rm $(file).bc; make > /dev/null 2> /dev/null; ./cc $(file).ji > /dev/null 2> $(file).ll; llvm-as-3.9 $(file).ll;lli-3.9 $(file).bc 
+test: cc $(file)
+	@ rm $(file).ll; rm $(file).bc; make > /dev/null 2> /dev/null; ./cc $(file) > /dev/null 2> $(file).ll; llvm-as-3.9 $(file).ll;lli-3.9 $(file).bc 
 
 check: cc test1.ji
 	./cc test1.ji ;echo "To run the code with lli run \"make test file=test1\""

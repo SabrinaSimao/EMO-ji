@@ -14,6 +14,8 @@ void yyerror(const char *s);
 bool debug = false;
 %}
 
+
+
 %union {
 	BlockNode *block;
 	ExprNode *expr;
@@ -35,6 +37,7 @@ bool debug = false;
 %token <token> ';' '='
 %token <token> '+' '*' '-' '/' '%' AND_OP OR_OP '^' '|' '&' EQ_OP
 %token <token> LE_OP GE_OP '<' '>'
+%token <token> '!' '~'
 %token	<token> CASE IF ELSE WHILE DO FOR CONTINUE BREAK RETURN
 %token	<token> PTR_OP INC_OP DEC_OP LEFT_OP RIGHT_OP NE_OP
 %token	<token> CONST ELLIPSIS
@@ -130,8 +133,6 @@ constant
 	| FLOAT_C	{ $$ = new DoubleNode(atof($1->c_str())); delete $1;}
 	;
 
-
-//TODO This can be a Variable and Function
 declaration
 	: declaration_specifiers ';'  {}
 	| declaration_specifiers init_declarator_list ';' {
